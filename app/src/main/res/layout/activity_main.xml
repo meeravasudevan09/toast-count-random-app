@@ -36,6 +36,7 @@
     <Button
         android:id="@+id/count_button"
         android:text="@string/count"
+        android:onClick="onCountClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
