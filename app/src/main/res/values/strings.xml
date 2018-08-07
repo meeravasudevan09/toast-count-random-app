@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ToastCountRandomApp</string>
+    <string name="app_name">Toast Count Random App</string>
     <string name="count">Count</string>
     <string name="toast">Toast</string>
     <string name="random">Random</string>
