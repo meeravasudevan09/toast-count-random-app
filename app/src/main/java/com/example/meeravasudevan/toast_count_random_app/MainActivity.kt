@@ -36,6 +36,12 @@ class MainActivity : AppCompatActivity() {
 //        create an intent to start the second activity
         val executeRandomActivityIntent = Intent(this, SecondActivity::class.java)
 
+//        TO SEND THE CURRENT COUNT TO THE SECOND ACT
+//        1. get the value of the count
+        val countValue = number_text_view.text.toString().toInt()
+//        2. put extra information when calling the intent
+        executeRandomActivityIntent.putExtra(SecondActivity.TOTAL_COUNT, countValue)
+
 //        start the new second activity
         startActivity(executeRandomActivityIntent)
     }
