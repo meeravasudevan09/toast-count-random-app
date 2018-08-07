@@ -1,5 +1,6 @@
 package com.example.meeravasudevan.toast_count_random_app
 
+import android.content.Intent
 import kotlinx.android.synthetic.main.activity_main.number_text_view
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -29,5 +30,13 @@ class MainActivity : AppCompatActivity() {
 
 //        display the new value in the text view
         number_text_view.text = convertTextViewValueToInt.toString()
+    }
+
+    fun onRandomClick(view: View) {
+//        create an intent to start the second activity
+        val executeRandomActivityIntent = Intent(this, SecondActivity::class.java)
+
+//        start the new second activity
+        startActivity(executeRandomActivityIntent)
     }
 }
